@@ -32,7 +32,7 @@ steps:
 
 - task: Docker@2
   inputs:
-    repository: 'aypas'
+    repository: 'aypas/gradle-test'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile.only-package'
-    tags: 'gradle-test:latest'
+    tags: 'latest'
