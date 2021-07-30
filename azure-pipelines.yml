@@ -14,6 +14,9 @@ pr:
 pool:
   vmImage: ubuntu-latest
 
+
+# some other changes
+
 steps:
 - script: ls
   displayName: 'Run a one-line script'
