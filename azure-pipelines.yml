@@ -7,8 +7,12 @@ pr:
   branches:
     include:
       - main
+      - dev
 pool:
   vmImage: ubuntu-latest
+
+
+# some other changes
 
 steps:
 - script: ls
