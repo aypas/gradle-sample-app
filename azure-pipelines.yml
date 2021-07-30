@@ -1,7 +1,7 @@
 
 trigger:
 - master
-- development
+- dev
 
 pr:
   branches:
