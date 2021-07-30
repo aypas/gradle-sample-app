@@ -5,6 +5,7 @@
 
 trigger:
 - master
+- development
 
 pr:
   branches:
@@ -56,3 +57,4 @@ steps:
 - task: SonarCloudPublish@1
   inputs:
     pollingTimeoutSec: '300'
+
