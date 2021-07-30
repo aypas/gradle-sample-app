@@ -35,4 +35,4 @@ steps:
     repository: 'aypas'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile.only-package'
-    tags: 'aypas/gradle-test:latest'
+    tags: 'gradle-test:latest'
