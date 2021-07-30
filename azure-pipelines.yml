@@ -50,6 +50,7 @@ steps:
     cliProjectKey: 'aypas_gradle-sample-app'
     cliProjectName: 'gradle-sample-app'
     cliSources: '.'
+    extraProperties: sonar.java.binaries=build/**/*
 
 - task: SonarCloudAnalyze@1
 - task: SonarCloudPublish@1
