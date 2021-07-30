@@ -12,3 +12,5 @@ pool:
 steps:
 - script: ls
   displayName: 'Run a one-line script'
+- script: pwd
+  displayName: "testing"
