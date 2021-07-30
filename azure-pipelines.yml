@@ -27,4 +27,5 @@ steps:
     sonarQubeRunAnalysis: false
     spotBugsAnalysis: false
 - script: ls
-- script: ls /build
+- script: ls build
+- script: ls build/libs
