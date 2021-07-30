@@ -14,5 +14,5 @@ steps:
   displayName: 'Run a one-line script'
 - script: pwd
   displayName: "testing"
-- script: echo $(Agent.BuildDirectory)
+- script: ls $(Agent.BuildDirectory)
   displayName: 'checking build dir value'
