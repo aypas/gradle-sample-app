@@ -49,7 +49,7 @@ steps:
     configMode: 'manual'
     cliProjectKey: 'aypas_gradle-sample-app'
     cliProjectName: 'gradle-sample-app'
-    cliSources: '**'
+    cliSources: '.'
 
 - task: SonarCloudAnalyze@1
 - task: SonarCloudPublish@1
