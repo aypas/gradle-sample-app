@@ -6,6 +6,10 @@
 trigger:
 - master
 
+pr:
+  branches:
+    include:
+      - main
 pool:
   vmImage: ubuntu-latest
 
@@ -36,3 +40,14 @@ steps:
     repository: 'aypas/gradle-test'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile.only-package'
+
+- task: SonarCloudPrepare@1
+  inputs:
+    SonarCloud: 'test-sonar'
+    organization: 'aypas'
+    scannerMode: 'Other'
+
+- task: SonarCloudAnalyze@1
+- task: SonarCloudPublish@1
+  inputs:
+    pollingTimeoutSec: '300'
