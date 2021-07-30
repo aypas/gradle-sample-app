@@ -45,7 +45,11 @@ steps:
   inputs:
     SonarCloud: 'test-sonar'
     organization: 'aypas'
-    scannerMode: 'Other'
+    scannerMode: 'CLI'
+    configMode: 'manual'
+    cliProjectKey: 'aypas_gradle-sample-app'
+    cliProjectName: 'gradle-sample-app'
+    cliSources: '**'
 
 - task: SonarCloudAnalyze@1
 - task: SonarCloudPublish@1
