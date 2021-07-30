@@ -16,3 +16,15 @@ steps:
   displayName: "testing"
 - script: ls $(Agent.BuildDirectory)
   displayName: 'checking build dir value'
+
+- task: Gradle@2
+  inputs:
+    gradleWrapperFile: 'gradlew'
+    tasks: 'build'
+    publishJUnitResults: true
+    testResultsFiles: '**/TEST-*.xml'
+    javaHomeOption: 'JDKVersion'
+    sonarQubeRunAnalysis: false
+    spotBugsAnalysis: false
+- script: ls
+- script: ls /build
