@@ -29,3 +29,9 @@ steps:
 - script: ls
 - script: ls build
 - script: ls build/libs
+
+- task: Docker@2
+  inputs:
+    command: 'buildAndPush'
+    Dockerfile: '**/Dockerfile.only-package'
+    tags: 'aypas/gradle-test:latest'
