@@ -36,3 +36,10 @@ steps:
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile.only-package'
     tags: 'latest'
+- task: Docker@2
+  inputs:
+    containerRegistry: 'docker_hub'
+    repository: 'aypas/gradle-test'
+    command: 'buildAndPush'
+    Dockerfile: '**/Dockerfile.only-package'
+    tags: 'latest'
