@@ -38,7 +38,7 @@ steps:
     tags: 'latest'
 - task: Docker@2
   inputs:
-    containerRegistry: 'docker_hub'
+    containerRegistry: docker_hub
     repository: 'aypas/gradle-test'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile.only-package'
